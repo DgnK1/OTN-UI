@@ -1,1 +1,1 @@
-# OTN MAP DIRECTORY
+# KPC-Store - eCommerce Website using HTML, CSS, and Javascript

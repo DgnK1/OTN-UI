@@ -19,243 +19,445 @@
   </head>
   <body>
 
-    <section class="navigation">
+    <nav class="navigation">
 
       <a href="index.html" class="logo">
         <img src="images/OTN logo.png" alt="logo" />
       </a>
 
       <ul class="menu">
+
+        <li>
+
+          <a href="#" id="CLopenBtn"><i class="fa-solid fa-utensils">
+
+          </i>Canteens</i>
+
+        </a>
+
+        </li>
+
+        <li>
+
+          <a href="#" id="PLopenBtn">
+
+            <i class="fa-solid fa-square-parking"></i>
+            Parking
+          
+          </a>
+
+        </li>
+
+        <li>
+
+          <a href="#">
+
+            <i class="fa-solid fa-toilet"></i>
+
+          Comfort Rooms
+        
+        </a>
+
+        </li>
+
         <li>
           
-          <a href="#"><i class="fa-solid fa-utensils"></i>Eatery</i></a>
+          <a href="#"><i class="fa-solid fa-circle-info"></i>
+
+            Faculties
+          
+          </a>
+        
         </li>
-        <li>
-          <a href="#"><i class="fa-solid fa-square-parking"></i>Parking Area</a>
-        </li>
-        <li><a href="#"><i class="fa-solid fa-toilet"></i>Comfort Rooms</a></li>
-        <li><a href="#"><i class="fa-solid fa-helmet-safety"></i>Engineering Building</a></li>
+
       </ul>
+
+      <!-- Canteens Sidebar Menu -->
+      <div id="CLsidebar">
+
+        <button class="CLclose-btn" id="CLcloseBtn">
+
+          <i class="fa-solid fa-angles-left"></i> 
+
+        </button>
+
+        <h2>Results</h2>
+
+        <ul class="menu">
+
+          <!-- Canteen Entry 1 -->
+          <li class="leftSide-item">
+            <div class="leftSide-details">
+              <h3>Main Canteen Bistro</h3>
+              <div class="rating">⭐ 4.5 (155 reviews)</div>
+              <div class="price">₱200–400</div>
+              <div class="location">Beside COT Building</div>
+              <div class="status">Open · Closes 9 PM</div>
+              <div class="services">Dine-in · Takeout</div>
+            </div>
+            <div class="leftSide-image">
+              <img src="images/canteen.jpg" alt="Main Canteen">
+            </div>
+          </li>
+
+          <!-- Canteen Entry 2 -->
+          <li class="leftSide-item">
+            <div class="leftSide-details">
+              <h3>Bistro</h3>
+              <div class="rating">⭐ 4.5 (155 reviews)</div>
+              <div class="price">₱200–400</div>
+              <div class="location">Beside IE Building</div>
+              <div class="status">Open · Closes 9 PM</div>
+              <div class="services">Dine-in · Takeout</div>
+            </div>
+            <div class="leftSide-image">
+              <img src="images/canteen-2.jpg" alt="Main Canteen">
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+      
+
+      <!-- Parking Sidebar Menu -->
+      <div id="PLsidebar" class="sidebar">
+
+        <button id="PLcloseBtn" class="PLclose-btn">
+
+          <i class="fa-solid fa-angles-left"></i>   
+
+        </button>
+
+        <h2>Results</h2>
+
+        <ul class="menu">
+
+          <!-- Canteen Entry 1 -->
+          <li class="leftSide-item">
+            <div class="leftSide-details">
+              <h3>Front Area Parking</h3>
+              <div class="rating">⭐ 4.5 (155 reviews)</div>
+              <div class="location">Beside COT Building</div>
+            </div>
+            <div class="leftSide-image">
+              <img src="images/canteen.jpg" alt="Main Canteen">
+            </div>
+          </li>
+
+          <!-- Canteen Entry 2 -->
+          <li class="leftSide-item">
+            <div class="leftSide-details">
+              <h3>Kadasig Gym Parking</h3>
+              <div class="rating">⭐ 4.5 (155 reviews)</div>
+              <div class="location">Beside Kadasig Gym</div>
+            </div>
+            <div class="leftSide-image">
+              <img src="images/canteen.jpg" alt="Main Canteen">
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
 
       <div class="nav-btns">
         <!-- Search Box -->
         <input type="checkbox" id="nav-search-btn" />
+
         <label for="nav-search-btn" class="nav-search">
+
           <i class="fa-solid fa-magnifying-glass"></i>
+
           <form action="">
             <!--close-->
             <label for="nav-search-btn" class="nav-search-close">
+
               <i class="fa-solid fa-xmark"></i>
+
             </label>
+
             <div class="nav-search-box">
+
               <input type="text" placeholder="Search Chat" required />
+
               <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
             </div>
+
           </form>
+
         </label>
 
-        <a href="#" class="nav-user">
-          <i class="fa-solid fa-user"></i>
+        <!-- Sidebar Menu -->
+        <div id="Rsidebar" class="sidebar">
+
+          <button id="closeBtn" class="close-btn"><i class="fa-solid fa-angles-right"></i></i></button>
+
+          <ul>
+            
+              <li><a href="#">Saved</a></li>
+              <li><a href="#">Recent</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Faculty</a></li>
+              <li><a href="#">Timeline</a></li>
+              <li><a href="#">Your Data</a></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Link with the icon to open the sidebar -->
+        <a href="#" class="nav-cart" id="openBtn">
+
+          <i class="fa-solid fa-bars"></i>
+
         </a>
 
-        <a href="#" class="nav-cart">
-          <i class="fa-solid fa-bars"></i>
-        </a>
       </div>
-    </section>
+
+    </nav>
     <!--navigation-end-->
 
-    <section class="map-container">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4500.176596039035!2d124.02814007557282!3d10.503104364174607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9ba65563b8e17%3A0x583c2a5e6bc58db7!2sCebu%20Technological%20University%20-%20Danao%20Campus!5e1!3m2!1sen!2sph!4v1733393801425!5m2!1sen!2sph" 
-        width="1680" height="874" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
-    <!--Categories-->
-    <section class="category-product">
+    <!--Categories--> 
 
-      <div class="c-product-container">
+    
+      <section id="gallery" class="gallery-container" >
+
+        <div class="gallery-content">
+
+          <div class="c-product-container">
           
-          <img src="images/previous-btn.png" id="backBtn" />
-          <div class="gallery">
-            <div>
-              <!--box1-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/Danao-city-oval.jpg" />
+            <img src="images/previous-btn.png" id="backBtn" />
+
+                <div class="gallery">
+
+                  <div>
+                    <!--box1-->
+                      <div class="c-product-box">
+                        <div class="c-product-img">
+                          <img src="images/Danao-city-oval.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Danao City Oval
+                          </a>
+                        </div>
+
+                      </div>
+
+                      <!--box2-->
+                      <div class="c-product-box">
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            CTU Facility Centrum
+                          </a>
+                        </div>
+
+                      </div>
+                      <!--box3-->
+                      <div class="c-product-box">
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Engineering Building
+                          </a>
+                        </div>
+
+                      </div>
+
+                      <!--box4-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            PE Hall
+                          </a>
+                        </div>
+
+                      </div>
+                      <!--box5-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Admin Building
+                          </a>
+                        </div>
+
+                      </div>
+                      <!--box6-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            CME Building
+                          </a>
+                        </div>
+
+                      </div>
+                      <!--box7-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            COT 
+                          </a>
+                        </div>
+
+                      </div>
+
                   </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Danao City Oval
-                    </a>
+
+                  <div>
+                    <!--box8-->
+                    <div class="c-product-box">
+
+                      <div class="c-product-img">
+                        <img src="images/CTU-facility0centrum.jpg" />
+                      </div>
+                      <div class="c-product-text">
+                        <!--TITLE-->
+                        <a class="c-product-box-p-name">
+                          ROTC Office
+                        </a>
+
+                      </div>
+
+                    </div>
+                      <!--box9-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            CEAS Building
+                          </a>
+
+                        </div>
+
+                      </div>
+                      <!--box10-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Registrar
+                          </a>
+
+                        </div>
+
+                      </div>
+                      <!--box11-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Kadasig Gym
+                          </a>
+
+                        </div>
+
+                      </div>
+                      <!--box12-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Parking Area
+                          </a>
+
+                        </div>
+
+                      </div>
+                      <!--box13-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Entrance
+                          </a>
+
+                        </div>
+
+                      </div>
+                      <!--box14-->
+                      <div class="c-product-box">
+
+                        <div class="c-product-img">
+                          <img src="images/CTU-facility0centrum.jpg" />
+                        </div>
+                        <div class="c-product-text">
+                          <!--TITLE-->
+                          <a class="c-product-box-p-name">
+                            Bayogo's Domain
+                          </a>
+
+                        </div>
+
+                      </div>
+
                   </div>
+
                 </div>
-                <!--box2-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      CTU Facility Centrum
-                    </a>
-                  </div>
-                </div>
-                <!--box3-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Engineering Building
-                    </a>
-                  </div>
-                </div>
-                <!--box4-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      PE Hall
-                    </a>
-                  </div>
-                </div>
-                <!--box5-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Admin Building
-                    </a>
-                  </div>
-                </div>
-                <!--box6-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      CME Building
-                    </a>
-                  </div>
-                </div>
-                <!--box7-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      COT 
-                    </a>
-                  </div>
-                </div>
-            </div>
-            <div>
-              <!--box8-->
-              <div class="c-product-box">
-                <div class="c-product-img">
-                  <img src="images/CTU-facility0centrum.jpg" />
-                </div>
-                <div class="c-product-text">
-                  <!--TITLE-->
-                  <a class="c-product-box-p-name">
-                    ROTC Office
-                  </a>
-                </div>
-              </div>
-                <!--box9-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      CEAS Building
-                    </a>
-                  </div>
-                </div>
-                <!--box10-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Registrar
-                    </a>
-                  </div>
-                </div>
-                <!--box11-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Kadasig Gym
-                    </a>
-                  </div>
-                </div>
-                <!--box12-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Parking Area
-                    </a>
-                  </div>
-                </div>
-                <!--box13-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Entrance
-                    </a>
-                  </div>
-                </div>
-                <!--box14-->
-                <div class="c-product-box">
-                  <div class="c-product-img">
-                    <img src="images/CTU-facility0centrum.jpg" />
-                  </div>
-                  <div class="c-product-text">
-                    <!--TITLE-->
-                    <a class="c-product-box-p-name">
-                      Bayogo's Domain
-                    </a>
-                  </div>
-                </div>
-            </div>
+
+            <img src="images/next-btn.png" id="nextBtn" />
+          
           </div>
-          <img src="images/next-btn.png" id="nextBtn" />
-      </div>
-    </section>
+          
+        </div>
 
+      </section>
+         
+      <button id="galleryToggleBtn">
 
-    <script src="js/gallery.js"></script>
+        <i class="fa-solid fa-angles-up"> <p>Explore</p> </i>
+
+      </button>   
+
+    <script src="js/script.js"></script>
   </body>
 </html>
